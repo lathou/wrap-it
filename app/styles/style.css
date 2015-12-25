@@ -1,42 +1,49 @@
+/********* Général **********/
+
+body{
+	font-family: 'Abel', sans-serif;
+	font-size: 19px;
+	background-color: #F3F3F3;
+}
+
+
+/********* Navbar **********/
+
+.navbar{
+	background-color: #000000;
+	box-shadow: 10px 0px 30px grey;
+	height : 85px;
+}
+
 .navbar-inverse .navbar-brand {
-	font-family: 'Tillana', cursive;
-	font-size: 30px;
+	font-family: 'Lobster', cursive;
+	font-size: 32px;
 	color: white;
-	margin-right: 20px;
-	margin-top: 8px;
+	margin-top : 7px;
+
 }
 
 .navbar-brand span{
 	font-family: 'Abel', sans-serif;
-	font-size: 16px;
-	color: #99CC33;
-}
-
-body{
-	font-family: 'Abel', sans-serif;
-	font-size: 20px;
-}
-
-.navbar{
-	min-height: 80px;
-	background-color: #000000;
+	font-size: 18px;
+	color: #99CC33;	
+	line-height: 2;
+	padding-left: 2px;
 }
 
 .navbar-nav{
 	float: right;
-	margin-top: 33px;
+	margin-top: 40px;
 }
 
-.navbar-inverse .navbar-nav>li>a
-{
+.navbar-inverse .navbar-nav>li>a{
 	color: white;
+	padding : 10px 12px;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover	
-{
+.navbar-inverse .navbar-nav>li>a:hover	{
 	color: #99CC33;
+
 }
-
-
 
 
