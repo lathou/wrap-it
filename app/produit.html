@@ -7,11 +7,12 @@
 		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/style-produit.css">
 		
 	</head>
 
 	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+		<nav class="navbar navbar-inverse navbar-fixed-top col-md-12">
   			<div class="container">
   				<div class="navbar-header"><a href="accueil.html" class="navbar-brand" >Wrap It Baby! <br><span>Distributeur des produits 
   					<img src="images/it-works-logo-small.png" width="90px"></span></a>
@@ -26,7 +27,20 @@
   			</div>
 		</nav>
 
-		<div class=""
+		<div class="carousel slide col-md-12" id="carousel" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel" data-slide-to = "0" class="active">
+				<li data-target="#carousel" data-slide-to = "1">
+			</ol>
+
+			<div class="carousel-inner">
+				<div class="item active"><img src="images/wrap-corp.jpg"></div>
+				<div class="item"><img src="images/wrap-visage.jpg"></div>
+			</div>
+
+			<a class="left carousel-control" data-slide="prev" href="#carousel"><span class= "glyphicon glyphicon-chevron-left"></span></a>
+			<a class="right carousel-control" data-slide = "next" href="#carousel"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>
 
 		<section>
 		</section>
@@ -35,6 +49,6 @@
 
 		</footer>	
 		<script src = "http://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
