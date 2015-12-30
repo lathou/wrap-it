@@ -11,7 +11,7 @@ body{
 
 .navbar{
 	background-color: #000000;
-	box-shadow: 10px 0px 30px grey;
+	box-shadow: 10px 0px 30px rgba(0,0,0,0.4);
 	height : 85px;
 }
 
@@ -44,6 +44,10 @@ body{
 .navbar-inverse .navbar-nav>li>a:hover	{
 	color: #99CC33;
 
+}
+
+.navbar-header img{
+	width : 100px;
 }
 
 
