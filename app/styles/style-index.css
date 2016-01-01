@@ -1,0 +1,16 @@
+/********Général*******/
+
+.categorie-produits{
+	background-color: #edf0e5;
+	padding: 10px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-color: #F3F3F3;
+	border-style: solid;
+}
+
+.categorie-produits p {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
