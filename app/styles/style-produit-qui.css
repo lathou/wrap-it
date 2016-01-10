@@ -1,8 +1,9 @@
 /********Général*******/
 
 a, a:hover, a:visited{
-	color : white;
+	color : #99cc33;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 section{
@@ -49,7 +50,6 @@ h3{
 
 #carousel{
 	padding :0px;
-	margin-top: 85px;
 }
 
 span{
@@ -91,10 +91,6 @@ span{
 }
 
 /*---------------PAGE QUI-SOMMES-NOUS ?-------------*/
-
-#qui-sommes-nous{
-	margin-top: 140px;
-}
 
 #portrait, #rejoindre{
 	margin-bottom: 70px;

@@ -8,11 +8,15 @@ body{
 
 
 /********* Navbar **********/
+.navbar a, .navbar a:hover{
+	font-weight: normal;
+}
 
 .navbar{
 	background-color: #000000;
 	box-shadow: 10px 0px 30px rgba(0,0,0,0.4);
 	height : 85px;
+	margin-bottom: 0px;
 }
 
 .navbar-inverse .navbar-brand {
