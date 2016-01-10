@@ -52,7 +52,7 @@ h3{
 	width : 100%;
 }
 
-.carousel{
+.carousel, .item.next.left{
 	padding :0px;
 }
 
