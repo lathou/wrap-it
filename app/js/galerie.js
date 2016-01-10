@@ -12,7 +12,7 @@ function previous(){
 	$('.previous').off('click');
 
 	if(parseInt($('.thumbnails').css('left'))<0 ){
-		$('.thumbnails').animate({left:'+=400'},500);
+		$('.thumbnails').animate({left:'+=350'},500);
 	}
 
 	setTimeout(function(){
@@ -23,8 +23,8 @@ function previous(){
 function next(){
 	$('.next').off('click');
 
-	if(parseInt($('.thumbnails').css('left'))>-400 ){
-		$('.thumbnails').animate({left:'-=400'},500);
+	if(parseInt($('.thumbnails').css('left'))>-350 ){
+		$('.thumbnails').animate({left:'-=350'},500);
 	}
 
 	setTimeout(function(){

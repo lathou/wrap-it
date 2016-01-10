@@ -7,55 +7,6 @@
 		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles/style.css">
-		<link rel="stylesheet" href="styles/style-produit-qui.css">
-		<style>
-			#deroulant{
-				margin : auto;	
-				overflow : hidden;
-				position: relative;
-				height: 70px;
-				
-			}
-			.thumbnails{
-				position : absolute;
-				left : 0px;				
-				width : 900px;				
-				margin: auto;
-			}
-			.thumbnail{
-				display : inline;
-				margin-bottom: 5px;
-				height : 70px;
-				cursor : pointer;
-			}
-
-			#zoom-container{
-				margin-top : 10px;
-				padding : 0px;
-			}
-
-			#zoom{
-				border : 5px solid white;
-				border-radius: 10px;
-				width : 90%;
-			}
-
-			.previous, .next{
-				cursor : pointer;
-				color : #99cc33;
-				padding : 17px 10px;
-				font-size: 30px;
-			}
-
-			#photos{
-				margin-top: 20px;				
-				margin-bottom: 20px;
-				padding : 10px 0px;
-				background-color: rgba(250,250,250,0.5);
-				border-radius: 10px;
-			}
-		</style>
-		
 	</head>
 
 	<body>
@@ -77,8 +28,10 @@
 
 		<div class="container">
 			<section id="temoignages" class="col-md-offset-2 col-md-8 ">
-				<h1 class="text-center">Des résultats époustouflants !</h1>									
+				<h1 class="text-center">Des résultats époustouflants !</h1>
+
 				<p class="col-md-12">Les soins It Works peuvent vous apporter des résultats réellement visibles, en peu de temps. Voici quelques photos d'utilisateurs des produits It Works, aussi bien des hommes que des femmes :</p>
+				
 				<div id="photos" class="col-md-offset-1 col-md-10">	
 					<span class="previous col-md-1 glyphicon glyphicon-chevron-left"></span>
 					<div id="deroulant" class="col-md-10">					
@@ -93,18 +46,14 @@
 							<img class="thumbnail" src ="images/tem7.jpg"/>
 							<img class="thumbnail" src ="images/tem8.jpg"/>
 							<img class="thumbnail" src ="images/tem9.jpg"/>
-						</div>	
-						
+						</div>							
 					</div>
 					<span class="next col-md-1 glyphicon glyphicon-chevron-right"></span>
 
-					<div id="zoom-container" class =" col-md-12 text-center">
-						<img id="zoom" src="images/tem0.jpg" />
-					</div>
+					<img id="zoom" class =" col-md-offset-1 col-md-10 text-center" src="images/tem0.jpg" />
 				</div>
 
 				<p class="col-md-12">Vous aussi ! Partagez vos impressions et vos résultats. Envoyez-nous vos témoignages via notre <a href="contact.html">formulaire de contact</a> !</p>
-
 			</section>
 		</div>
 

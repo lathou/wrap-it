@@ -2,17 +2,14 @@
 <html>
 	<head>
 		<title>Wrap it Baby - Contactez nous </title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="styles/bootstrap.min.css">
+		<meta charset="utf-8">		
 		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
 		<link rel="stylesheet" href="styles/style.css">
-		<link rel="stylesheet" href="styles/style-produit-qui.css">
-		<link rel="stylesheet" href="styles/style-index.css">
-		<link rel="stylesheet" href="styles/style-contact.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
 	</head>
+
 	<body>
 		<nav class="navbar navbar-inverse col-md-12">
   			<div class="container">
@@ -29,49 +26,44 @@
   			</div>
 		</nav>
 
-
 		<div class="container">
-			<section id="qui-sommes-nous" class="col-md-offset-2 col-md-8 ">
-				<h1 class="text-center">Contactez nous!</h1>
-					<div class="description"> <!-- Ajouter ce style -->
-                            	<p>
-	                            	Notre equipe se tient a votre disposition pour repondre a toutes vos questions! Remplissez juste ce formulaire et nous vous repondrons rapidement.                            	
-	                            </p>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 form-box">
-                        		<div class="form-top-right">
-                        			<i class="fa fa-envelope"></i>
-                        		</div>
-                            <div class="form-bottom contact-form">
-			                    <form role="form" action="php/contact.php" method="post">
-			                    	<div class="form-group">
-			                    		<label class="sr-only" for="contact-email">Email</label>
-			                        	<input type="text" name="email" placeholder="Votre email" class="contact-email form-control" id="contact-email">
-			                        </div>
-			                        <div class="form-group">
-			                        	<label class="sr-only" for="contact-subject">Subject</label>
-			                        	<input type="text" name="subject" placeholder="Sujet" class="contact-subject form-control" id="contact-subject">
-			                        </div>
-			                        <div class="form-group">
-			                        	<label class="sr-only" for="contact-message">Message</label>
-			                        	<textarea name="message" placeholder="Votre message" class="contact-message form-control" id="contact-message"></textarea>
-			                        </div>
-			                        <button type="submit" class="btn">Envoyer</button>
-			                    </form>
-		                    </div>
+			<section class="col-md-offset-2 col-md-8 ">
+				<h1 class="text-center">Contactez nous !</h1>
+				<p>Notre equipe se tient a votre disposition pour repondre a toutes vos questions! Remplissez juste ce formulaire et nous vous repondrons rapidement.</p>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 form-box">
+                       	<div class="form-top-right"><i class="fa fa-envelope"></i></div>
+
+                        <div class="form-bottom contact-form">
+			                <form role="form" action="php/contact.php" method="post">
+
+			                   	<div class="form-group">
+			                    	<label class="sr-only" for="contact-email">Email</label>
+			                        <input type="text" name="email" placeholder="Votre email" class="contact-email form-control" id="contact-email">
+			                    </div>
+
+			                    <div class="form-group">
+			                     	<label class="sr-only" for="contact-subject">Subject</label>
+			                        <input type="text" name="subject" placeholder="Sujet" class="contact-subject form-control" id="contact-subject">
+			                    </div>
+
+			                    <div class="form-group">
+			                        <label class="sr-only" for="contact-message">Message</label>
+			                        <textarea name="message" placeholder="Votre message" class="contact-message form-control" id="contact-message"></textarea>
+			                    </div>
+			                    <button type="submit" class="btn">Envoyer</button>
+			                </form>
                         </div>
                     </div>
-
+                </div>
+            </section>
 		</div>
-
-
 
 		<footer>
 
-			</footer>
-			<script src = "http://code.jquery.com/jquery-2.1.1.min.js"></script>
-			<script src="js/bootstrap.min.js"></script>
+		</footer>
+		<script src = "http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.backstretch.min.js"></script>
         <script src="js/retina-1.1.0.min.js"></script>
         <script src="js/scripts.js"></script>

@@ -2,15 +2,65 @@
 
 body{
 	font-family: 'Abel', sans-serif;
-	font-size: 19px;
+	font-size: 18px;
 	background-color: #F3F3F3;
+}
+
+a, a:hover, a:visited{
+	color : #99cc33;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+section{
+	padding-bottom: 60px;
+	border-bottom: 1px solid #E3E5E1;
+}
+
+h1{
+	color : #99cc33;
+	font-weight: bold;
+	margin-bottom: 30px;
+	margin-top: 60px;
+}
+
+h3{
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.btn, input[type="button"], a.btn{
+	background-color : #99cc33;
+	margin: 30px 40px 0px 40px;
+	font-weight: bold;
+	border-radius: 2px;
+	min-width : 100px;	
+	font-size : 17px;
+	border : none;
+	color : white;
+	padding: 7px;
+}
+
+.btn:hover, .btn:focus, input[type="button"]:hover, input[type="button"]:focus{
+	background-color :#A3DA36;
+	color : white;
+}
+
+.carousel img{
+	width : 100%;
+}
+
+.carousel{
+	padding :0px;
+}
+
+.carousel-indicators li{
+	border : 1px solid  #B5B5B5;
 }
 
 
 /********* Navbar **********/
-.navbar a, .navbar a:hover{
-	font-weight: normal;
-}
 
 .navbar{
 	background-color: #000000;
@@ -19,12 +69,15 @@ body{
 	margin-bottom: 0px;
 }
 
-.navbar-inverse .navbar-brand {
+.navbar a{
+	font-weight: normal;
+}
+
+.navbar-inverse .navbar-brand, .navbar-brand a, .navbar-brand a:hover{
 	font-family: 'Lobster', cursive;
 	font-size: 32px;
-	color: white;
 	margin-top : 7px;
-
+	color: white;
 }
 
 .navbar-brand span{
@@ -54,4 +107,138 @@ body{
 	width : 100px;
 }
 
+/*---------------PAGE ACCUEIL-------------*/
 
+.categorie-produits{
+	background-color: rgba(250,250,250,0.5);
+	padding: 10px;
+	padding-bottom: 20px;
+	border: 5px #F3F3F3 solid;
+	border-radius: 20px;
+}
+
+.categorie-produits p {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.img-circle{
+	border : 5px solid #E3E5E1;
+	width : 120px;
+	height : 120px;
+}
+
+
+/*---------------PAGE PRODUITS-------------*/
+
+/********* Carousel Produits*******/
+
+.carousel-caption{
+	left : 48%;
+	top : 80px;
+	text-align: left;
+	height : 300px;
+	color : grey;
+}
+
+.carousel-caption h2{
+	margin-bottom: 20px;
+}
+
+/**********Contenu Produits ********/
+
+#categories img{
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+#wrap img{
+	border-radius: 5px;
+	margin-bottom: 30px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+/*---------------PAGE TEMOIGNAGE -------------*/
+
+
+#deroulant{
+	margin : auto;	
+	overflow : hidden;
+	position: relative;
+	height: 70px;
+	
+}
+.thumbnails{
+	position : absolute;
+	left : 0px;				
+	width : 900px;				
+	margin: auto;
+}
+.thumbnail{
+	display : inline;
+	margin-bottom: 5px;
+	height : 70px;
+	cursor : pointer;
+}
+
+#zoom{
+	border : 5px solid white;
+	border-radius: 10px;
+	padding : 0px;
+	margin-top : 10px;
+}
+
+.previous, .next{
+	cursor : pointer;
+	color : #99cc33;
+	padding : 17px 10px;
+	font-size: 30px;
+}
+
+#photos{
+	margin-top: 20px;				
+	margin-bottom: 20px;
+	padding : 10px 0px;
+	background-color: rgba(250,250,250,0.5);
+	border-radius: 10px;
+}
+/*---------------PAGE QUI-SOMMES-NOUS ?-------------*/
+
+#portrait img{
+	float : left;
+	width : 140px;
+	margin-right : 20px;
+	border-radius: 70px;
+	border : 5px solid #E3E5E1;
+}
+
+#citation{
+	color : #99cc33;
+	font-style: italic;
+	font-weight: bold;
+	margin-top : 20px;
+}
+
+#citation span{
+	font-size : 30px;
+	color : #99cc33;
+	line-height : 1px;
+	font-weight: bold;
+}
+
+#rejoindre img{
+	float : right;
+	width : 35%;
+	margin-left: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+
+
+/*--------------- PAGE CONTACT-------------*/
+
+textarea.form-control{
+	height: 200px;
+}
