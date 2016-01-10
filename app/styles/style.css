@@ -52,7 +52,7 @@ h3{
 	width : 100%;
 }
 
-.carousel, .item.next.left{
+.carousel{
 	padding :0px;
 }
 
@@ -208,7 +208,7 @@ h3{
 	margin-top : 10px;
 }
 
-.previous, .next{
+.precedent, .suivant{
 	cursor : pointer;
 	color : #99cc33;
 	padding : 17px 10px;

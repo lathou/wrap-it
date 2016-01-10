@@ -4,30 +4,30 @@ $(function(){
 		$('#zoom').attr('src',source);
 	});
 
-	$('.previous').on('click', previous);
-	$('.next').on('click', next);
+	$('.precedent').on('click', previous);
+	$('.suivant').on('click', next);
 });
 
 function previous(){
-	$('.previous').off('click');
+	$('.precedent').off('click');
 
 	if(parseInt($('.thumbnails').css('left'))<0 ){
 		$('.thumbnails').animate({left:'+=350'},500);
 	}
 
 	setTimeout(function(){
-		$('.previous').on('click', previous);
+		$('.precedent').on('click', previous);
 	}, 500);
 }
 
 function next(){
-	$('.next').off('click');
+	$('.suivant').off('click');
 
 	if(parseInt($('.thumbnails').css('left'))>-350 ){
 		$('.thumbnails').animate({left:'-=350'},500);
 	}
 
 	setTimeout(function(){
-		$('.next').on('click', next);
+		$('.suivant').on('click', next);
 	}, 500);
 }
