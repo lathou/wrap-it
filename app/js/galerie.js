@@ -1,7 +1,7 @@
 $(function(){
 	$('.thumbnail').on('click',function(){
-		var source = $(this).attr('src');
-		$('#zoom').attr('src',source);
+		var source = $(this).attr('id');
+		$('#zoom').attr('src', source);
 	});
 
 	$('.precedent').on('click', previous);
