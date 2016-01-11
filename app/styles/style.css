@@ -131,7 +131,9 @@ h3{
 }
 
 /*----------------------------------------------------PAGE ACCUEIL----------------------------------------*/
-
+#categories-accueil{
+	margin-top: 60px;
+}
 .categorie-produits{
 	background-color: rgba(250,250,250,0.6);
 	padding: 10px;
