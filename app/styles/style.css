@@ -282,3 +282,42 @@ h3{
 textarea.form-control{
 	height: 200px;
 }
+
+footer{
+	background-color: black;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	color: #99CC33;
+
+}
+
+footer{
+	font-size: 14px;
+}
+
+footer p{
+padding-left: 50px;
+text-align: center;
+color: #ffffff;
+}
+
+footer a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+footer a:hover{
+	color: #99CC33;
+	text-decoration: none;
+}
+
+footer ul{
+	display: inline-block;
+	list-style-type: none;
+}
+footer li{
+	display: inline;
+	padding: 0px 3px;
+}
