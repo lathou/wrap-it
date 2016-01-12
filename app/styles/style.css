@@ -14,21 +14,36 @@ a, a:hover, a:visited{
 }
 
 section{
-	padding-bottom: 60px;
 	border-bottom: 1px solid #E3E5E1;
+	background-color: rgba(250,250,250,0.4);	
 }
 
-h1{
+section.col-md-12{
+	padding:30px 60px 60px 60px;
+}
+
+section:last-child{
+	border :none;
+}
+
+h1{background-color: rgba(250,250,250,0.4);
 	color : #99cc33;
 	font-weight: bold;
-	margin-bottom: 30px;
-	margin-top: 60px;
+	margin-bottom: 0px;
+	margin-top: 20px;
+	padding-bottom : 30px;
+	padding-top:60px;
+
 }
 
 h3{
 	font-weight: bold;
-	margin-top: 40px;
+	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+ul{
+	padding:0px;
 }
 
 .btn, input[type="button"], a.btn{
@@ -130,15 +145,62 @@ h3{
 	width : 100px;
 }
 
+/****************footer**************/
+
+footer{
+	background-color: black;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	color: #99CC33;
+	margin-top: 130px;
+	font-size: 14px;
+}
+
+footer p{
+	text-align: center;
+	color: #ffffff;
+}
+
+footer a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+footer a:hover{
+	color: #99CC33;
+	text-decoration: none;
+}
+
+footer ul{
+	display: inline-block;
+	list-style-type: none;
+}
+footer li{
+	display: inline;
+	padding: 0px 3px;
+}
+
 /*----------------------------------------------------PAGE ACCUEIL----------------------------------------*/
 #categories-accueil{
-	margin-top: 60px;
+	margin-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
+
+#categories-accueil .col-lg-3{
+	padding: 4px;
+}
+
+#categories-accueil a.btn{
+	margin:auto;
+}
+
 .categorie-produits{
-	background-color: rgba(250,250,250,0.6);
+	background-color: rgba(250,250,250,0.8);
 	padding: 10px;
 	padding-bottom: 20px;
-	border: 5px #F3F3F3 solid;
 	border-radius: 20px;
 }
 
@@ -191,7 +253,7 @@ h3{
 	margin-bottom: 20px;
 	list-style:none;
 	padding : 30px 0px;
-	background-color: rgba(250,250,250,0.6);
+	background-color: rgba(250,250,250,0.8);
 	border-radius: 10px;
 }
 
@@ -241,8 +303,8 @@ h3{
 #photos{
 	margin-top: 20px;				
 	margin-bottom: 20px;
-	padding : 10px 0px;
-	background-color: rgba(250,250,250,0.6);
+	padding : 40px 0px;
+	background-color: rgba(250,250,250,0.8);
 	border-radius: 10px;
 }
 /*---------------------------------------------PAGE QUI-SOMMES-NOUS ?---------------------------------------*/
@@ -272,8 +334,7 @@ h3{
 #rejoindre img{
 	float : right;
 	width : 35%;
-	margin-left: 10px;
-	margin-top: 10px;
+	margin-left: 25px;
 	border-radius: 5px;
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 }
@@ -286,41 +347,11 @@ textarea.form-control{
 	height: 200px;
 }
 
-footer{
-	background-color: black;
-	height: auto;
-	padding-top: 20px;
-	padding-bottom: 30px;
-	color: #99CC33;
-
+.form-control, .form-top-right{
+	text-align: left;
 }
 
-footer{
-	font-size: 14px;
+.form-box{
+	margin-top: 30px;
 }
 
-footer p{
-padding-left: 50px;
-text-align: center;
-color: #ffffff;
-}
-
-footer a{
-	color: #ffffff;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-footer a:hover{
-	color: #99CC33;
-	text-decoration: none;
-}
-
-footer ul{
-	display: inline-block;
-	list-style-type: none;
-}
-footer li{
-	display: inline;
-	padding: 0px 3px;
-}
