@@ -18,7 +18,7 @@ section{
 	background-color: rgba(250,250,250,0.4);	
 }
 
-section.col-md-12{
+section.col-sm-12{
 	padding:30px 60px 60px 60px;
 }
 
@@ -48,7 +48,7 @@ ul{
 
 .btn, input[type="button"], a.btn{
 	background-color : #99cc33;
-	margin: 30px 40px 0px 40px;
+	margin: 30px 0px 0px 0px;
 	font-weight: bold;
 	border-radius: 2px;
 	min-width : 100px;	
@@ -96,16 +96,23 @@ ul{
 	font-size: 25px;
 }
 
-
+.green{
+	color: #99cc33;
+}
 /********* Navbar **********/
 
 .navbar{
 	background-color: #000000;
 	box-shadow: 10px 0px 30px rgba(0,0,0,0.4);
-	height : 85px;
+	min-height : 85px;
 	margin-bottom: 0px;
 	border-radius: 0px;
 	z-index:100;
+}
+
+.navbar-header{
+	min-height : 85px;
+	padding:0px;
 }
 
 .navbar a{
@@ -127,8 +134,9 @@ ul{
 }
 
 .navbar-nav{
-	float: right;
 	margin-top: 40px;
+	text-align: center;
+	float:right;
 }
 
 .navbar-inverse .navbar-nav>li>a{
@@ -138,11 +146,11 @@ ul{
 
 .navbar-inverse .navbar-nav>li>a:hover	{
 	color: #99CC33;
-
 }
 
 .navbar-header img{
 	width : 100px;
+	padding:0px;
 }
 
 /****************footer**************/
@@ -215,13 +223,12 @@ footer li{
 	height : 120px;
 }
 
-
 /*--------------------------------------------------------PAGE PRODUITS---------------------------------------------*/
 
 /********* Carousel Produits*******/
 
 .carousel-caption{
-	left : 48%;
+	top:20px;
 	text-align: left;
 	height : 300px;
 	color : grey;
@@ -230,23 +237,19 @@ footer li{
 
 .carousel-caption h2{
 	margin-bottom: 20px;
+	margin-top:30px;
 }
 
 /**********Contenu Produits ********/
 
 #categories img{
 	margin:auto;
-	width : 45%;
-	display :inline-block;
-	vertical-align: middle;
 }
 
 #categories p{
-	width : 48%;
-	display : inline-block;
-	vertical-align: middle;
-	margin-left: 20px;
-	margin-right: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 15px;
 }
 
 #categories li{
@@ -296,7 +299,7 @@ footer li{
 .precedent, .suivant{
 	cursor : pointer;
 	color : #99cc33;
-	padding : 17px 10px;
+	padding : 17px 0px 17px 15px;
 	font-size: 30px;
 }
 
@@ -307,6 +310,7 @@ footer li{
 	background-color: rgba(250,250,250,0.8);
 	border-radius: 10px;
 }
+
 /*---------------------------------------------PAGE QUI-SOMMES-NOUS ?---------------------------------------*/
 
 #portrait img{
@@ -353,5 +357,129 @@ textarea.form-control{
 
 .form-box{
 	margin-top: 30px;
+	padding:0px;
 }
+
+/*------------------------------------------- RESPONSIVE --------------------------------------*/
+
+.navbar-toggle{
+	margin-top:20px;
+}
+
+.collapse{
+	padding:0;
+}
+
+/*--------------- PORTABLES-----------*/
+@media(max-width:767px){
+	section.col-sm-12{
+		padding:30px 30px 40px 30px;
+	}
+	.container{
+		padding:0px;
+	}
+
+	/*Navbar*/	
+	.navbar-nav{
+		clear:both;
+	}
+
+	/*Porduit*/
+	.carousel-caption input{
+		display:none;
+	}
+	.carousel-produit{
+		min-height: 150px;
+	}
+	.carousel-produit img{
+		min-height: 150px;
+		width:auto;
+	}
+
+	/*Témoignage*/
+	.thumbnail, #deroulant{
+		height:60px;
+	}
+	.precedent, .suivant{
+		padding : 15px 0px 15px 10px;
+		font-size: 25px;
+	}
+}
+
+/*------------- TABLETTES ----------------*/
+@media(max-width: 991px){
+	.container{
+		width:100%;		
+	}
+
+	.top-page{
+		right:5px;
+		bottom :5px;
+	}
+
+	/*Produits*/
+	.carousel-caption{
+		font-size:16px;
+	}
+	.carousel-caption h2{
+		font-size: 22px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.carousel-indicators{
+		left:50px;
+		bottom:5px;
+	}
+}
+
+/*------------- ECRANS MOYENS -------------*/
+@media (max-width: 1199px){
+
+	/*accueil*/
+	#categories-accueil .col-lg-3{
+		padding: 8px;
+	}
+	.categorie-produits{
+		min-height:380px;
+	}
+
+	/*Produit*/
+	.carousel-caption{
+		top:7px;
+	}
+	.carousel-caption input{
+		margin-top: 5px;
+	}
+	.carousel-indicators{
+		bottom:10px;
+	}
+}
+
+/*--------AUTRE-------------*/
+
+@media (max-width: 873px){
+	.navbar-nav{
+		margin:0px;
+	}
+}
+
+
+@media (max-width: 660px){
+	/*Produit*/
+	.carousel-caption h2{
+		display:none;
+	}
+	.carousel-caption li:last-child, .carousel-caption li:first-child{
+		display : none;
+	}
+	.carousel-caption ul{
+		padding-top: 20px;
+	}
+	.carousel-produit .item>img{
+		max-width:150%;
+		margin-left: -25%;
+	}
+}
+
+
 

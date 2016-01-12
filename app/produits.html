@@ -12,21 +12,30 @@
 
 	<body>
 		<nav class="navbar navbar-inverse col-md-12">
-  			<div class="container">
+			<div class="container">
   				<div class="navbar-header"><a href="accueil.html" class="navbar-brand" >Wrap It Baby! <br><span>Distributeur des produits 
-  					<img src="images/it-works-logo-small.png" alt="logo it works"></span></a>
+  					<img src="images/it-works-logo-small.png" alt="logo it works"></span></a>  				
+
+  					<button data-toggle="collapse" class="navbar-toggle" data-target=".navbar-collapse">
+	  					<span class="icon-bar"></span>
+	  					<span class="icon-bar"></span>
+	  					<span class="icon-bar"></span>
+	  				</button>
   				</div>
-  				<ul class="nav navbar-nav ">
-  					<li><a href="index.html">Accueil</a></li>
-  					<li><a href="produits.html">Produits</a></li>
-  					<li><a href="temoignages.html">Temoignages</a></li>
-  					<li><a href="qui-sommes-nous.html">Qui sommes-nous?</a></li>
-  					<li><a href="contact.html">Contact</a></li>
-  				</ul>
+
+  				<div class="collapse navbar-collapse">
+	  				<ul class="nav navbar-nav">
+	  					<li><a href="index.html">Accueil</a></li>
+	  					<li><a href="produits.html">Produits</a></li>
+	  					<li><a href="temoignages.html">Témoignages</a></li>
+	  					<li><a href="qui-sommes-nous.html">Qui sommes-nous?</a></li>
+	  					<li><a href="contact.html">Contact</a></li>
+	  				</ul>
+	  			</div>
   			</div>
 		</nav>
 
-		<div class="carousel slide col-md-12" id="carousel" data-ride="carousel">
+		<div class="carousel slide carousel-produit col-md-12" id="carousel" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carousel" data-slide-to = "0" class="active">
 				<li data-target="#carousel" data-slide-to = "1">
@@ -38,7 +47,7 @@
 			<div class="carousel-inner">
 				<div class="item active">
 					<img src="images/wrap-corp.jpg" alt="wrap corps">
-					<div class="carousel-caption">
+					<div class="carousel-caption col-xs-offset-4 col-xs-6">
 						<h2>Le Wrap pour le corps</h2>
 						<ul>							
 							<li>Améliore la texture de la peau et son élasticité</li>
@@ -51,7 +60,7 @@
 				</div>				
 				<div class="item">
 					<img src="images/cleanser.jpg" alt="cleanser">	
-					<div class="carousel-caption">			
+					<div class="carousel-caption col-xs-offset-4 col-xs-6">			
 						<h2>Le Gel Nettoyant corp & visage</h2>
 						<ul>	
 							<li>Elimine les impuretés</li>
@@ -63,7 +72,7 @@
 				</div>
 				<div class="item">
 					<img src="images/wrap-visage.jpg" alt="wrap visage">
-					<div class="carousel-caption">				
+					<div class="carousel-caption col-xs-offset-4 col-xs-6">				
 						<h2>Le Wrap pour le visage</h2>
 						<ul>							
 							<li>Produit un effet liftant</li>
@@ -75,7 +84,7 @@
 				</div>
 				<div class="item">
 					<img src="images/defining-gel.jpg" alt="defining gel">
-					<div class="carousel-caption">				
+					<div class="carousel-caption col-xs-offset-4 col-xs-6">				
 						<h2>Le Defining Gel</h2>
 						<ul>
 							<li>Réduit l'apparition de la cellulite</li>
@@ -88,7 +97,7 @@
 				</div>
 				<div class="item">
 					<img src="images/lip-eye.jpg" alt="lip&eye cream">	
-					<div class="carousel-caption">			
+					<div class="carousel-caption col-xs-offset-4 col-xs-6">			
 						<h2>La Crème Lifting Lip & Eye</h2>
 						<ul>							
 							<li>Conçut pour les lèvres délicates et contours des yeux</li>
@@ -110,31 +119,31 @@
 			<div id="descriptif-produits" class="col-md-offset-1 col-md-10 ">
 				<h1 class="text-center">Nos produits</h1>
 				
-				<section id="intro" class="col-md-12">
+				<section id="intro" class="col-sm-12">
 					<p>Découvrez une gamme de produits cosmétiques incroyables, de la marque <strong>It Works</strong>!</p>
 					<p>It Works est une marque récement arrivée en France, proposant des produits à base d'ingrédients naturels, pour un maximum de résultats !<br/>Elle vous offre un grand choix de produits : des crèmes de soins, des wraps aussi bien pour le corps que pour le visage, des soins pour les ongles et les cheveux, mais également des compléments alimentaires.<br/>
 					</p>
 				</section>
 
-				<section id = "categories" class="col-md-12">
+				<section id = "categories" class="col-sm-12">
 					<h3>La gamme, 4 catégories :</h3>
 					<ul>
-						<li><img src="images/corps.png" alt="corps"/><p><strong>Corps : </strong> Remodelez votre corps ! Retrouvez une silhouette affinée et lissée grâce au Wrap corps et au Defining Gel. </p>
+						<li class="col-sm-12"><img src="images/corps.png" alt="corps" class="col-sm-6 col-xs-12" /><p class="col-sm-6"><strong>Corps : </strong> Remodelez votre corps ! Retrouvez une silhouette affinée et lissée grâce au Wrap corps et au Defining Gel. </p>
 							
 						</li>
-						<li><img src="images/peau.png" alt="peau"/><p><strong>Peau : </strong> Les crèmes et le wrap visage permettent différentes actions. Hydratez votre peau en profondeur, réduisez vos ridules ou bien encore attenuez vos vergetures et cicatrices.</p>
+						<li class="col-sm-12"><img src="images/peau.png" alt="peau" class="col-sm-6 col-xs-12"/><p class="col-sm-6"><strong>Peau : </strong> Les crèmes et le wrap visage permettent différentes actions. Hydratez votre peau en profondeur, réduisez vos ridules ou bien encore attenuez vos vergetures et cicatrices.</p>
 							
 						</li>
-						<li><img src="images/greens.png" alt="greens"/><p><strong> Greens : </strong> Un mélange unique d'herbes, de nutriments, et de vitamines à ajouter à votre alimentation.</p>
+						<li class="col-sm-12"><img src="images/greens.png" alt="greens" class="col-sm-6 col-xs-12"/><p class="col-sm-6"><strong> Greens : </strong> Un mélange unique d'herbes, de nutriments, et de vitamines à ajouter à votre alimentation.</p>
 							
 						</li>
-						<li><img src="images/pack.png" alt="pack"/><p><strong>Packs : </strong> Obtenez de meilleurs résultats en combinant les produits !</p>
+						<li class="col-sm-12"><img src="images/pack.png" alt="pack" class="col-sm-6 col-xs-12"/><p class="col-sm-6"><strong>Packs : </strong> Obtenez de meilleurs résultats en combinant les produits !</p>
 							
 						</li>
 					</ul>
 				</section>
 
-				<section id = "wrap" class="col-md-12">
+				<section id = "wrap" class="col-sm-12">
 					<h3>Le Wrap, qu'est-ce que c'est?</h3>
 					<img src = "images/wrap.jpg" alt="wrap ultimate body"/>
 					<p><strong>Le Wrap Ultimate Body est notre produit phare ! </strong><br/>
@@ -144,7 +153,7 @@
 					</p>
 				</section>
 
-				<section class="text-center col-md-12">
+				<section class="text-center col-sm-12">
 					<h3>N'attendez plus, découvrez vite la totalité de nos produits !</h3>
 					<input type="button" value="Accéder à la boutique en ligne" onClick="javascript:document.location.href='http://janymo.itworkseu.com/fr/'" />
 				</section>
