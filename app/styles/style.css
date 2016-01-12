@@ -383,8 +383,24 @@ textarea.form-control{
 
 	/*Navbar*/	
 	.navbar-nav{
-		clear:both;
+		float:left;
+		text-align: left;
+		width:100%;
 	}
+
+	.container>.navbar-collapse{
+		padding:0px;
+		padding-bottom: 10px;
+	}
+
+	.navbar-nav>li:hover{
+		background-color: #171717;
+	}
+
+	.navbar-inverse .navbar-nav>li>a{
+		padding-left: 40px;
+	}
+
 
 	/*Porduit*/
 	.carousel-caption input{
