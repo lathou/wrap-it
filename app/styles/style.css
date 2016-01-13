@@ -139,6 +139,11 @@ ul{
 	float:right;
 }
 
+#achat {
+color: #99CC33;
+font-weight: bold;
+}
+
 .navbar-inverse .navbar-nav>li>a{
 	color: white;
 	padding : 10px 12px;
@@ -171,13 +176,11 @@ footer p{
 }
 
 footer a{
-	color: #ffffff;
-	text-decoration: none;
+	color: #99CC33;
 	text-transform: uppercase;
 }
 
 footer a:hover{
-	color: #99CC33;
 	text-decoration: none;
 }
 
@@ -189,6 +192,17 @@ footer li{
 	display: inline;
 	padding: 0px 3px;
 }
+
+footer span{
+	float: right;
+	padding-right: 30px;
+}
+
+#social{
+	color: white;
+}
+
+
 
 /*----------------------------------------------------PAGE ACCUEIL----------------------------------------*/
 #categories-accueil{
@@ -346,7 +360,6 @@ footer li{
 }
 
 
-
 /*----------------------------------------------------- PAGE CONTACT-----------------------------------------*/
 
 textarea.form-control{
@@ -498,6 +511,8 @@ textarea.form-control{
 		margin-left: -25%;
 	}
 }
+
+	>
 
 
 
