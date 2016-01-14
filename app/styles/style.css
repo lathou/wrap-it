@@ -44,6 +44,7 @@ h3{
 
 ul{
 	padding:0px;
+	list-style: none;
 }
 
 .btn, input[type="button"], a.btn{
@@ -195,6 +196,7 @@ footer li{
 	margin-top: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 40px;
 }
 
 #categories-accueil .col-lg-3{
@@ -223,6 +225,54 @@ footer li{
 	height : 120px;
 }
 
+
+
+.wrap-info{
+	background-color: rgba(250,250,250,0.8);
+	border-radius: 20px;
+	padding : 0px;
+}
+.wrap-info div{
+	padding-top: 20px;
+	margin-bottom: 10px;
+	font-style: italic;
+}
+
+.wrap-info span{
+	color:#99cc33;
+	font-size: 30px;
+	position:relative;
+	top:80px;
+}
+
+div.observez{
+	color : #99cc33;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 1;
+	padding-top: 50px;
+}
+
+.fond{
+	background-color: #99cc33;
+	margin:0px;
+	padding-top:20px;
+	padding-bottom: 30px;
+	color:black;
+	border-top: 10px black solid;
+	font-weight: bold;
+}
+
+.min{
+	font-size: 35px;
+	color:white;
+}
+
+.wrap-info img{
+	width : 100%;
+	height:100%;
+	display:block;
+}
 /*--------------------------------------------------------PAGE PRODUITS---------------------------------------------*/
 
 /********* Carousel Produits*******/
@@ -372,6 +422,72 @@ textarea.form-control{
 	padding:0;
 }
 
+
+
+
+/*------------- ECRANS MOYENS -------------*/
+@media (max-width: 1199px){
+	.container{
+		width:100%;
+	}
+
+	/*accueil*/
+	#categories-accueil .col-lg-3{
+		padding: 8px;
+	}
+	.categorie-produits{
+		min-height:380px;
+	}
+
+	div.observez{
+		font-size: 35px;
+	}
+
+
+	/*Produit*/
+	.carousel-caption{
+		top:7px;
+	}
+	.carousel-caption input{
+		margin-top: 5px;
+	}
+	.carousel-indicators{
+		bottom:10px;
+	}
+}
+
+
+/*------------- TABLETTES ----------------*/
+@media(max-width: 991px){
+	.container{
+		width:100%;		
+	}
+
+	.top-page{
+		right:5px;
+		bottom :5px;
+	}
+
+	/*accueil*/
+	div.observez, .fond{
+		font-size: 30px;
+	}
+
+	/*Produits*/
+	.carousel-caption{
+		font-size:16px;
+	}
+	.carousel-caption h2{
+		font-size: 22px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.carousel-indicators{
+		left:50px;
+		bottom:5px;
+	}
+}
+
 /*--------------- PORTABLES-----------*/
 @media(max-width:767px){
 	section.col-sm-12{
@@ -401,6 +517,15 @@ textarea.form-control{
 		padding-left: 40px;
 	}
 
+	/*accueil*/
+	div.observez, .fond{
+		font-size: 25px;
+	}
+
+	.wrap-info span{
+		top:60px;
+	}
+
 
 	/*Porduit*/
 	.carousel-caption input{
@@ -424,55 +549,6 @@ textarea.form-control{
 	}
 }
 
-/*------------- TABLETTES ----------------*/
-@media(max-width: 991px){
-	.container{
-		width:100%;		
-	}
-
-	.top-page{
-		right:5px;
-		bottom :5px;
-	}
-
-	/*Produits*/
-	.carousel-caption{
-		font-size:16px;
-	}
-	.carousel-caption h2{
-		font-size: 22px;
-		margin-top: 20px;
-		margin-bottom: 10px;
-	}
-	.carousel-indicators{
-		left:50px;
-		bottom:5px;
-	}
-}
-
-/*------------- ECRANS MOYENS -------------*/
-@media (max-width: 1199px){
-
-	/*accueil*/
-	#categories-accueil .col-lg-3{
-		padding: 8px;
-	}
-	.categorie-produits{
-		min-height:380px;
-	}
-
-	/*Produit*/
-	.carousel-caption{
-		top:7px;
-	}
-	.carousel-caption input{
-		margin-top: 5px;
-	}
-	.carousel-indicators{
-		bottom:10px;
-	}
-}
-
 /*--------AUTRE-------------*/
 
 @media (max-width: 873px){
@@ -483,6 +559,15 @@ textarea.form-control{
 
 
 @media (max-width: 660px){
+	/*accueil*/
+	div.observez, .fond, .wrap-info h3, .wrap-info span{
+		font-size: 18px;
+	}
+	.wrap-info h3{
+		margin-top : 5px;
+		margin-bottom :10px;
+	}
+
 	/*Produit*/
 	.carousel-caption h2{
 		display:none;
@@ -497,6 +582,26 @@ textarea.form-control{
 		max-width:150%;
 		margin-left: -25%;
 	}
+}
+
+@media(max-width:510px){
+	/*accueil*/
+	.wrap-info div{
+		width : 70%;
+		margin :0 auto;
+		float : initial;
+	}
+	.wrap-info span{
+		display : none;
+	}
+	div.observez{
+		font-size: 25px;
+		padding-bottom: 30px;
+	}
+	/*temoignage*/
+	.precedent, .suivant{
+		padding : 17px 0px 17px 5px;
+	}	
 }
 
 
