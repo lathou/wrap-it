@@ -147,7 +147,7 @@ font-weight: bold;
 
 .navbar-inverse .navbar-nav>li>a{
 	color: white;
-	padding : 10px 12px;
+	padding : 10px 10px;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover	{
@@ -174,6 +174,8 @@ footer{
 footer p{
 	text-align: center;
 	color: #ffffff;
+	padding-right: 20px;
+	padding-left: 20px;
 }
 
 footer a{
@@ -444,6 +446,10 @@ textarea.form-control{
 		width:100%;
 	}
 
+	.navbar-inverse .navbar-nav>li>a{
+		padding : 10px 7px;
+	}
+
 	/*accueil*/
 	#categories-accueil .col-lg-3{
 		padding: 8px;
@@ -480,6 +486,12 @@ textarea.form-control{
 		right:5px;
 		bottom :5px;
 	}
+
+	.navbar-nav{
+		margin:0px;
+		width: 100%;
+	}
+
 
 	/*accueil*/
 	div.observez, .fond{
@@ -597,7 +609,7 @@ textarea.form-control{
 	}
 }
 
-<<<<<<< HEAD
+
 @media(max-width:510px){
 	/*accueil*/
 	.wrap-info div{
@@ -617,9 +629,7 @@ textarea.form-control{
 		padding : 17px 0px 17px 5px;
 	}	
 }
-=======
-	>
->>>>>>> d598079c33d4ba1b22b63909830c8f77be4252b6
+
 
 
 
