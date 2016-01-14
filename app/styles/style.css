@@ -241,7 +241,9 @@ footer span{
 	height : 120px;
 }
 
-
+.privilege strong{
+	font-size: 20px;
+}
 
 .wrap-info{
 	background-color: rgba(250,250,250,0.8);
