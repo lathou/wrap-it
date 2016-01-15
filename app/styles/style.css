@@ -201,7 +201,7 @@ footer span{
 	padding-right: 30px;
 }
 
-#social{
+a.social{
 	color: white;
 }
 
@@ -433,6 +433,9 @@ textarea.form-control{
 	margin-bottom: 25px;
 }
 
+#fb a {
+	color:#405D9A;
+}
 /*------------------------------------------- RESPONSIVE --------------------------------------*/
 
 .navbar-toggle{
@@ -443,9 +446,7 @@ textarea.form-control{
 	padding:0;
 }
 
-#fb a {
-	color:#405D9A;
-}
+
 
 
 /*------------- ECRANS MOYENS -------------*/
