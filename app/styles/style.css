@@ -472,6 +472,12 @@ textarea.form-control{
 	margin-bottom: 25px;
 }
 
+.error-message{
+	color : #a94442;
+	text-align: left;
+	font-size: 14px;
+}
+
 #fb a {
 	color:#405D9A;
 }

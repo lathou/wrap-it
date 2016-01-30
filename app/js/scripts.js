@@ -1,27 +1,17 @@
 
 jQuery(document).ready(function() {
 	
-    /*
-        Fullscreen background
-    */
-    $.backstretch("assets/img/backgrounds/1.jpg");
-    
-    $('#top-navbar-1').on('shown.bs.collapse', function(){
-    	$.backstretch("resize");
-    });
-    $('#top-navbar-1').on('hidden.bs.collapse', function(){
-    	$.backstretch("resize");
-    });
-    
-    /*
-	    Contact form
-	*/
+    /*Contact form*/
 	$('.contact-form form input[type="text"], .contact-form form textarea').on('focus', function() {
-		$('.contact-form form input[type="text"], .contact-form form textarea').removeClass('input-error');
+		$(this).parent('.div-email, .div-subject, .div-message').removeClass('has-error');
+		$(this).next('p').fadeOut(400, function(){
+			$(this).remove();
+		});
 	});
 	$('.contact-form form').submit(function(e) {
 		e.preventDefault();
-	    $('.contact-form form input[type="text"], .contact-form form textarea').removeClass('input-error');
+	    $('.div-email, .div-subject, .div-message').removeClass('has-error');
+	    $('.error-message').remove();
 	    var postdata = $('.contact-form form').serialize();
 	    $.ajax({
 	        type: 'POST',
@@ -30,24 +20,25 @@ jQuery(document).ready(function() {
 	        dataType: 'json',
 	        success: function(json) {
 	            if(json.emailMessage != '') {
-	                $('.contact-form form .contact-email').addClass('input-error');
+	                $('.div-email').addClass('has-error');
+	                $('.div-email').append('<p class="error-message">' + json.emailMessage + '</p>');
 	            }
 	            if(json.subjectMessage != '') {
-	                $('.contact-form form .contact-subject').addClass('input-error');
+	                $('.div-subject').addClass('has-error');
+	                $('.div-subject').append('<p class="error-message">' + json.subjectMessage + '</p>');
 	            }
 	            if(json.messageMessage != '') {
-	                $('.contact-form form textarea').addClass('input-error');
+	                $('.div-message').addClass('has-error');
+	                $('.div-message').append('<p class="error-message">' + json.messageMessage + '</p>');
 	            }
-	            if(json.emailMessage == '' && json.subjectMessage == '' && json.messageMessage == '') {
+	            if(json.emailMessage == '' && json.subjectMessage == '' && json.messageMessage == '' && json.isSend) {
 	                $('.contact-form form').fadeOut('fast', function() {
-	                    $('.contact-form').append('<p>Thanks for contacting us! We will get back to you very soon.</p>');
-	                    // reload background
-	    				$.backstretch("resize");
+	                    $('.contact-form').append('<p>Merci ! Nous vous répondrons dans les meilleurs délais</p>');
 	                });
+	            }else if(json.emailMessage == '' && json.subjectMessage == '' && json.messageMessage == '' &&!json.isSend){
+	                $('.div-message').after('<p class="error-message">Une erreur s\'est produite lors de l\'envoi, votre message n\'a pu être expédié</p>');	                
 	            }
 	        }
 	    });
-	});
-    
-    
+	});     
 });

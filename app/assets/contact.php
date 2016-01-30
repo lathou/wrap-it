@@ -8,7 +8,7 @@ function isEmail($email) {
 if($_POST) {
 
     // Enter the email where you want to receive the message
-    $emailTo = 'jany@ymail.com ';
+    $emailTo = '';
 
     $clientEmail = addslashes(trim($_POST['email']));
     $subject = addslashes(trim($_POST['subject']));
@@ -20,15 +20,17 @@ if($_POST) {
         $array['emailMessage'] = 'Email invalide!';
     }
     if($subject == '') {
-        $array['subjectMessage'] = 'Merci de preciser un sujet.';
+        $array['subjectMessage'] = 'Veuillez preciser un sujet.';
     }
     if($message == '') {
-        $array['messageMessage'] = 'Merci de saisir un message';
+        $array['messageMessage'] = 'Veuillez saisir un message';
     }
     if(isEmail($clientEmail) && $subject != '' && $message != '') {
         // Send email
+        ini_set("SMTP","auth.smtp.1and1.fr" ); 
+        
 		$headers = "From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
-		mail($emailTo, $subject . " [Depuis site web]", $message, $headers);
+		$array['isSend'] = mail($emailTo, $subject . " [Depuis site web]", $message, $headers);
     }
 
     echo json_encode($array);

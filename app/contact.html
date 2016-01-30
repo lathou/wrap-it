@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Wrap it Baby - Contact</title>
+		<title>Contact</title>
 		<meta charset="utf-8">	
-		<meta name="viewport" content="width=device-width"/>	
+		<meta name="viewport" content="width=device-width"/>
+		<link rel="icon" type="image/png" href="favicon.ico" />	
 		<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -14,7 +15,7 @@
 	<body>
 		<nav class="navbar navbar-inverse col-md-12">
 			<div class="container">
-  				<div class="navbar-header"><a href="index.html" class="navbar-brand" >Wrap It Baby! <br><span>Distributeur des produits 
+  				<div class="navbar-header"><a href="index.html" class="navbar-brand" >1-2-3 Wrappez! <br><span>Distributeur des produits 
   					<img src="images/it-works-logo-small.png" alt="logo it works"></span></a>  				
 
   					<button data-toggle="collapse" class="navbar-toggle" data-target=".navbar-collapse">
@@ -31,7 +32,7 @@
 	  					<li><a href="temoignages.html">Témoignages</a></li>
 	  					<li><a href="qui-sommes-nous.html">Qui sommes-nous?</a></li>
 	  					<li><a href="contact.html">Contact</a></li>
-	  					<li><a href="http://janymo.itworkseu.com/fr/" id="achat">Boutique en ligne</a></li>
+	  					<li><a href="#" id="achat">Boutique en ligne</a></li>
 	  				</ul>
 	  			</div>
   			</div>
@@ -41,26 +42,27 @@
 			<div class="col-md-offset-1 col-md-10 ">
 				<h1 class="text-center">Contactez-nous !</h1>
 				<section class="col-sm-12">	
-					<p><strong>Jeanne-Marie HARANGER, distributrice indépendante</strong> des produits It Works se tient à votre disposition pour répondre à toutes vos questions ! Remplissez simplement ce formulaire, elle vous répondra dans les meilleurs délais.</p>
+					<p><strong>Jane DOE, distributrice indépendante</strong> des produits It Works se tient à votre disposition pour répondre à toutes vos questions ! Remplissez simplement ce formulaire, elle vous répondra dans les meilleurs délais.</p>
 
                     <div class="form-box text-center col-md-offset-1 col-md-10">
-                       	<div class="form-top-right"><i class="fa fa-envelope"></i></div>
+                       	
                         <div class="form-bottom contact-form">
-			                <form action="php/contact.php" method="post">
+                        	<div class="form-top-right"><i class="fa fa-envelope"></i></div>
+			                <form action="assets/contact.php" method="post" >
 
-			                   	<div class="form-group">
+			                   	<div class="form-group div-email">
 			                    	<label class="sr-only" for="contact-email">Email</label>
-			                        <input type="text" name="email" placeholder="Votre email" class="contact-email form-control" id="contact-email">
+			                        <input type="text" name="email" placeholder="Votre email" class="contact-email form-control" id="contact-email" disabled>
 			                    </div>
 
-			                    <div class="form-group">
+			                    <div class="form-group div-subject">
 			                     	<label class="sr-only" for="contact-subject">Subject</label>
-			                        <input type="text" name="subject" placeholder="Sujet" class="contact-subject form-control" id="contact-subject">
+			                        <input type="text" name="subject" placeholder="Sujet" class="contact-subject form-control" id="contact-subject" disabled>
 			                    </div>
 
-			                    <div class="form-group">
+			                    <div class="form-group div-message">
 			                        <label class="sr-only" for="contact-message">Message</label>
-			                        <textarea name="message" placeholder="Votre message" class="contact-message form-control" id="contact-message"></textarea>
+			                        <textarea name="message" placeholder="Votre message" class="contact-message form-control" id="contact-message" disabled>Le formulaire est indisponible</textarea>
 			                    </div>
 			                    <button type="submit" class="btn">Envoyer</button>
 			                </form>
@@ -69,7 +71,7 @@
 	            </section>	                    
 	            <section class="text-center col-sm-12">
                 	<p id="fb">
-                	  Rejoignez-moi sur ma page <a href="https://www.facebook.com/groups/174922982858657/" target="_blank"><i class="fa fa-facebook-official fa-2x"></i>acebook </a> ! Echangez avec les utilisateurs de produits <strong>It Works</strong>, partagez vos résultats...
+                	  Rejoignez-moi sur ma page <a href="#" target="_blank"><i class="fa fa-facebook-official fa-2x"></i>acebook </a> ! Echangez avec les utilisateurs de produits <strong>It Works</strong>, partagez vos résultats...
                 	</p>
             	</section>
 	        </div>
@@ -81,7 +83,7 @@
 			<div class="container">
 				<div class="text-center">
 					<ul>
-						<li><a href="http://janymo.itworkseu.com/fr/" target="_blank">Boutique en ligne </a></li>
+						<li><a href="#" target="_blank">Boutique en ligne </a></li>
 						<li> |</li>
 						<li><a href="temoignages.html">Photos AVANT / APRES </a></li>
 						<li> |</li>
@@ -93,7 +95,7 @@
 				<p class="small">Les résultats individuels peuvent être variés. Ces descriptions ne sont pas désignées à prétendre que ces produits peuvent être utilisés pour diagnostiquer, traiter, guérir, atténuer ou prévenir une maladie. Ces prétentions n'ont pas été cliniquement prouvée ou évaluée par une agence réglementée ou gouvernementale. Si vous êtes en cours de traitement ou de grossesse, veuillez demander conseil à votre distributrice avant toute utilisation.</p>
 				<p>Copyright 2016, It Works! Marketing International All rights reserved.</p>
 
-				<span><a href="https://www.facebook.com/groups/174922982858657/" class="social"><i class="fa fa-facebook-official fa-3x"></i></a>
+				<span><a href="#" class="social"><i class="fa fa-facebook-official fa-3x"></i></a>
 				</span>	
 			</div>	
 
@@ -102,8 +104,6 @@
 		</footer>
 		<script src = "http://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.backstretch.min.js"></script>
-        <script src="js/retina-1.1.0.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/top-page.js"></script>
 	</body>
